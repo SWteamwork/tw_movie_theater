@@ -146,6 +146,7 @@ a {
 
 .page p {
   flex: 3;
+  text-align: center;
 }
 
 .page btn {
