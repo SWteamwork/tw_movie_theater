@@ -105,8 +105,12 @@ a {
   flex: 1;
 }
 
+.selected {
+  color: #ff4902;
+}
+
 .filter_content {
-  height: 640px;
+  height: 600px;
   background: #eeeeee;
 }
 
@@ -116,7 +120,22 @@ a {
 }
 
 .movies_message {
-  height: 590px;
+  height: 550px;
+  padding: 10px 0px;
+}
+
+.movie_item {
+  display: inline-block;
+  width: 15%;
+  height: 250px;
+  padding: 7px 10px;
+  margin: 10px 5px 0px 0px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.movie_img {
+  height: 190px;
+  margin-bottom: 5px;
 }
 
 .page {
