@@ -6,7 +6,7 @@
     <title>
       tw_movie_theater
     </title>
-    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/unified.css"/>
     <link rel="stylesheet" href="../css/home_page.css"/>
   </head>
   <body>
@@ -15,8 +15,8 @@
         <img src="../images/tw_logo.png"/>
       </div>
       <div class="search_box">
-        <input type="text" class="search_txt" placeholder=" 输入你要搜索的内容"/>
-        <button class="btn search_btn">
+        <input type="text" class="search_txt" placeholder=" 输入你要搜索的内容" id="input"/>
+        <button class="btn search_btn" id="btn">
           搜索
         </button>
       </div>
@@ -24,6 +24,12 @@
         <button class=" btn login">
           登录
         </button>
+        <script type="text/x-jsrender" id="tip_content">
+            <content class="tip_content">
+              <h>提示信息</h>
+              <p>仅支持按类别、电影名称、id查找</p>
+            </content>
+        </script>
         <button class="btn register">
           注册
         </button>
@@ -67,78 +73,78 @@
         <div>
           <ul class="filter_nav">
             <li>
-              <a href="#" class="selected">
+              <a href="#" id="全部" class="selected">
                 全部
               </a>
-              <a href="#">
+              <a href="#" id="悬疑">
                 悬疑
               </a>
-              <a href="#">
+              <a href="#" id="剧情">
                 剧情
               </a>
-              <a href="#">
+              <a href="#" id="喜剧">
                 喜剧
               </a>
-              <a href="#">
+              <a href="#" id="动作">
                 动作
               </a>
-              <a href="#">
+              <a href="#" id="爱情">
                 爱情
               </a>
-              <a href="#">
+              <a href="#" id="犯罪">
                 犯罪
               </a>
-              <a href="#">
+              <a href="#" id="冒险">
                 冒险
               </a>
-              <a href="#">
+              <a href="#" id="战争">
                 战争
               </a>
-              <a href="#">
+              <a href="#" id="传记">
                 传记
               </a>
-              <a href="#">
+              <a href="#" id="武侠">
                 武侠
               </a>
-              <a href="#">
+              <a href="#" id="伦理">
                 伦理
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" id="惊悚">
                 惊悚
               </a>
-              <a href="#">
-                悬疑
+              <a href="#" id="西部">
+                西部
               </a>
-              <a href="#">
+              <a href="#" id="恐怖">
                 恐怖
               </a>
-              <a href="#">
+              <a href="#" id="科幻">
                 科幻
               </a>
-              <a href="#">
+              <a href="#" id="奇幻">
                 奇幻
               </a>
-              <a href="#">
+              <a href="#" id="家庭">
                 家庭
               </a>
-              <a href="#">
+              <a href="#" id="动画">
                 动画
               </a>
-              <a href="#">
+              <a href="#" id="儿童">
                 儿童
               </a>
-              <a href="#">
+              <a href="#" id="音乐">
                 音乐
               </a>
-              <a href="#">
+              <a href="#" id="歌舞">
                 歌舞
               </a>
-              <a href="#">
+              <a href="#" id="历史">
                 历史
               </a>
-              <a href="#">
+              <a href="#" id="纪录">
                 纪录
               </a>
             </li>
@@ -163,5 +169,12 @@
     </footer>
     <script src="../lib/jquery.min.js"></script>
     <script src="../js/banner.js"></script>
+    <script src="../lib/movies.js"></script>
+    <script src="../js/item_storage.js"></script>
+    <script src="../js/get_movies.js"></script>
+    <script src="../js/show_movies.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/movies.js"></script>
+    <script src="../layer-v3.1.1/layer/layer.js"></script>
   </body>
 </html>
