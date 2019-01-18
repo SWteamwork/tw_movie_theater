@@ -1,7 +1,7 @@
 var data = [];
 var idItem = location.href.split('=');
 var id = idItem[1];
-for (let i = 1; i < MOVIESDATA.length; i++) {
+for (let i = 0; i < MOVIESDATA.length; i++) {
   if (id === MOVIESDATA[i].id) {
     data = MOVIESDATA[i];
   }
