@@ -1,24 +1,27 @@
 .main {
   min-height: 850px;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   padding: 30px 0px 10px 0px;
   background: #fff;
 }
+
 .movie_name {
   font-size: 25px;
+  margin-bottom: 10px;
 }
+
 .movie_picture {
   width: 133px;
   height: 200px;
   float: left;
+  margin-right:36px;
 }
+
 .movie_information {
-  display: inline-block;
-  float: right;
-  padding-top: 20px;
-  width: 700px;
+  float: left;
 }
+
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -27,42 +30,32 @@
   clear: both;
   height: 0;
 }
+
 .movie_evaluation_logo, .recommendation_title {
   font-size: 20px;
   margin: 15px 0px;
+  color:#007722;
 }
+
 .movie_information li {
   line-height: 30px;
   font-size: 16px;
 }
+
+.move_recommendation{
+  display: flex;
+  padding: 5px;
+}
+
 .movie_item {
-  display: inline-block;
-  width: 150px;
-  padding: 10px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+ flex: 1;
 }
-.movie_title p {
-  text-align: center;
-  margin-bottom: 5px;
-}
-.movie_item img {
-  height: 195px;
-  width: 130px;
-}
+
 .userName {
   font-size: 15px;
 }
+
 .movie_content li {
-  border: solid 1px gray;
   font-size: 14px;
-  background-image: url(../images/wood.jpg);
 }
-/*.movie_title {
-  color: white;
-}
-.recommendation_title {
-  color: #FFFF6F;
-}
-.movie_evaluation_logo{
-  color: #FFFF6F;
-}*/
+

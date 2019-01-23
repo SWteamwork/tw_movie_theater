@@ -64,6 +64,23 @@ img {
   margin: 10px 20px;
 }
 
+.movie_item {
+  width: 15%;
+  height:250px;
+  padding: 7px 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.movie_img {
+  height: 190px;
+  margin-bottom: 5px;
+}
+
+.movie_title p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 .footer {
   height: 40px;
   line-height: 40px;
