@@ -1,5 +1,6 @@
 $(function() {
   let itemsStorage = new ItemsStorage(localStorage);
+  listenerOfSort(itemsStorage);
   itemsStorage.storageItems(MOVIESDATA);
   var typeArr = TYPE;
   var movie = localStorage.getItem("type");
