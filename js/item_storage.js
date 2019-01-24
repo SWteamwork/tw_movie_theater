@@ -13,4 +13,9 @@ class ItemsStorage {
     let filterMovies = allmovies.filter(movie => movie.genres.includes(filterWord));
     return filterMovies;
   }
+  filterNameItems(filterName) {
+    let all = this.getStorageItems();
+    let filterNameMovies = all.filter(movie => movie.title.includes(filterName) || movie.original_title.includes(filterName));
+    return filterNameMovies;
+  }
 }
