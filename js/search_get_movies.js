@@ -1,7 +1,9 @@
 $(function() {
   let itemsStorage = new ItemsStorage(localStorage);
   itemsStorage.storageItems(MOVIESDATA);
-  showMovies(itemsStorage.getStorageItems());
+  var typeArr = TYPE;
+  var movie = localStorage.getItem("type");
+  searchMain(movie, typeArr, itemsStorage)
   listenerOfSort(itemsStorage);
 });
 
