@@ -1,6 +1,17 @@
 body {
   font-size: 13px;
   width: 100%;
+  background: #eee;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  outline: none;
 }
 
 * {

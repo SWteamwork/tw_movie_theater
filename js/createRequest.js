@@ -2,15 +2,15 @@ var obj;
 
 function viewComments(datas) {
   obj = eval(datas.comments);
-  let label = `<li>用户${obj[0].id}:${obj[0].content}评论时间${obj[0].created_at
+  let label = `<li><p class='userName'>用户${obj[0].id}:</p><br />${obj[0].content}<br />评论时间${obj[0].created_at
 }</li>
-  <li>用户${obj[1].id}:${obj[1].content}评论时间${obj[0].created_at
+  <br><li><p class='userName'>用户${obj[1].id}:</p><br />${obj[1].content}<br />评论时间${obj[0].created_at
 }</li>
-  <li>用户${obj[2].id}:${obj[2].content}评论时间${obj[0].created_at
+  <br><li><p class='userName'>用户${obj[2].id}:</p><br />${obj[2].content}<br />评论时间${obj[0].created_at
 }</li>
-  <li>用户${obj[3].id}:${obj[3].content}评论时间${obj[0].created_at
+  <br><li><p class='userName'>用户${obj[3].id}:</p><br />${obj[3].content}<br />评论时间${obj[0].created_at
 }</li>
-  <li>用户${obj[4].id}:${obj[4].content}评论时间${obj[0].created_at
+ <br><li><p class='userName'>用户${obj[4].id}:</p><br />${obj[4].content}<br />评论时间${obj[0].created_at
 }</li>`;
   $('.movie_content').append(label)
 }
